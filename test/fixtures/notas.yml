@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cnpj_fornecedor: MyString
+  nome_fornecedor: MyString
+  data: 2024-06-19
+  numero_da_nota: 1
+  serie: MyString
+  regime: MyString
+  valor: 9.99
+  servicos: MyText
+  valor_final: 9.99
+
+two:
+  cnpj_fornecedor: MyString
+  nome_fornecedor: MyString
+  data: 2024-06-19
+  numero_da_nota: 1
+  serie: MyString
+  regime: MyString
+  valor: 9.99
+  servicos: MyText
+  valor_final: 9.99

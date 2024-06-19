@@ -1,0 +1,62 @@
+<%= form_with(model: nota) do |form| %>
+  <% if nota.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(nota.errors.count, "error") %> prohibited this nota from being saved:</h2>
+
+      <ul>
+        <% nota.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :cnpj_fornecedor, style: "display: block" %>
+    <%= form.text_field :cnpj_fornecedor %>
+  </div>
+
+  <div>
+    <%= form.label :nome_fornecedor, style: "display: block" %>
+    <%= form.text_field :nome_fornecedor %>
+  </div>
+
+  <div>
+    <%= form.label :data, style: "display: block" %>
+    <%= form.date_field :data %>
+  </div>
+
+  <div>
+    <%= form.label :numero_da_nota, style: "display: block" %>
+    <%= form.number_field :numero_da_nota %>
+  </div>
+
+  <div>
+    <%= form.label :serie, style: "display: block" %>
+    <%= form.text_field :serie %>
+  </div>
+
+  <div>
+    <%= form.label :regime, style: "display: block" %>
+    <%= form.text_field :regime %>
+  </div>
+
+  <div>
+    <%= form.label :valor, style: "display: block" %>
+    <%= form.text_field :valor %>
+  </div>
+
+  <div>
+    <%= form.label :servicos, style: "display: block" %>
+    <%= form.text_area :servicos %>
+  </div>
+
+  <div>
+    <%= form.label :valor_final, style: "display: block" %>
+    <%= form.text_field :valor_final %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
